@@ -23,7 +23,7 @@ async function seed() {
   for (let i = 1; i <= 20; i++) {
     await createTrack(generateRandomString(20), Math.round(Math.random() * 9000 + 180000));
     if (i <= 15) {
-      await createPlaylist(generateRandomString(30), generateRandomString(500));
+      await createPlaylist(generateRandomString(30), generateRandomString(300));
       await createPlaylistsTracks(i, i);
     }
   }
